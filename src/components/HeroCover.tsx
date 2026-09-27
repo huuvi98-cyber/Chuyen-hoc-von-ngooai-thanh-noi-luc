@@ -12,7 +12,7 @@ export const HeroCover: React.FC = () => {
 
         {/* Main Editorial Title Box */}
         <div className="relative z-20 max-w-5xl mx-auto px-6 py-6 md:py-10 text-center flex flex-col justify-center items-center">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-normal tracking-tight text-white leading-[1.15] max-w-4xl mx-auto drop-shadow-[0_4px_30px_rgba(0,0,0,0.85)]">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[92px] font-serif font-normal tracking-tight text-white leading-[1.08] max-w-5xl mx-auto drop-shadow-[0_4px_30px_rgba(0,0,0,0.85)]">
             <span className="block">Chuyển hóa</span>
             <span className="block text-sky-200">vốn ngoại</span>
             <span className="block italic font-light text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-100 to-sky-200 drop-shadow-[0_0_25px_rgba(254,240,138,0.5)]">

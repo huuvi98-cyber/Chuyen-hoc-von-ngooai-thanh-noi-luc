@@ -108,7 +108,10 @@ export const ExpertPerspectives: React.FC = () => {
               <div className="text-xs sm:text-sm text-sky-200 font-semibold mb-1">
                 {activeExpert.name}, {activeExpert.titleAndOrg}
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif text-cyan-300 font-bold tracking-tight">
+              <h3 
+                key={activeExpert.topic}
+                className="text-2xl sm:text-3xl font-sans uppercase font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-200 to-amber-200 animate-[fadeIn_0.5s_ease-out] hover:tracking-wider transition-all duration-300"
+              >
                 {activeExpert.topic}
               </h3>
             </div>
