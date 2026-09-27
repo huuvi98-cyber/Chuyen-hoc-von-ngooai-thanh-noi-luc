@@ -95,14 +95,14 @@ export const FdiInfographic: React.FC = () => {
       <div className="absolute top-0 right-0 w-80 h-80 bg-sky-400/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Infographic Grid matching info.jpg */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
         
         {/* ============================================================ */}
         {/* LEFT COLUMN: Title & Visual Illustrations */}
         {/* ============================================================ */}
         <div className="lg:col-span-5 flex flex-col justify-start space-y-6 sm:space-y-7 border-b lg:border-b-0 lg:border-r border-sky-400/25 pb-6 lg:pb-0 lg:pr-8">
           <div>
-            {/* Big Brand Title matching info.jpg */}
+            {/* Big Brand Title */}
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <h3 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-sky-200 leading-none select-none drop-shadow-[0_2px_12px_rgba(56,189,248,0.4)]">
@@ -118,7 +118,7 @@ export const FdiInfographic: React.FC = () => {
                 </div>
               </div>
 
-              {/* Ascending Bar Chart & Arrows Illustration - Scaled Down */}
+              {/* Ascending Bar Chart & Arrows Illustration */}
               <div className="w-16 sm:w-20 md:w-24 h-14 sm:h-16 md:h-20 shrink-0 relative pt-1">
                 <svg className="w-full h-full" viewBox="0 0 120 100" fill="none">
                   {/* Ascending bars */}

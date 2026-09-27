@@ -53,24 +53,24 @@ Nguồn: Vietnam Economic Review`;
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 sm:p-6"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 backdrop-blur-xs p-4 sm:p-6"
       onClick={onClose}
     >
       <div 
-        className="bg-[#111319] border border-stone-800 rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[85vh]"
+        className="bg-[#FFFDF7] border border-stone-300 rounded-2xl w-full max-w-2xl overflow-hidden shadow-2xl flex flex-col max-h-[85vh] text-slate-900"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="p-5 border-b border-stone-800 flex items-center justify-between">
+        <div className="p-5 border-b border-stone-200 flex items-center justify-between bg-[#FBF7EB]">
           <div className="flex items-center gap-2">
-            <FileText className="w-4 h-4 text-amber-400" />
-            <span className="text-sm font-semibold text-stone-100 font-sans">
+            <FileText className="w-4 h-4 text-blue-700" />
+            <span className="text-sm font-semibold text-blue-950 font-sans">
               Bản Tóm Tắt Điều Hành (Executive Summary)
             </span>
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded text-stone-400 hover:text-white hover:bg-stone-800 transition-colors"
+            className="p-1 rounded text-slate-400 hover:text-slate-700 hover:bg-stone-200/60 transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -78,19 +78,19 @@ Nguồn: Vietnam Economic Review`;
 
         {/* Content */}
         <div className="p-6 overflow-y-auto space-y-4">
-          <div className="border-l-2 border-amber-500 pl-4 py-1">
-            <h4 className="text-lg font-serif text-stone-100 font-medium">{STORY_METADATA.title}</h4>
-            <p className="text-xs text-stone-400 mt-0.5">{STORY_METADATA.subhead}</p>
+          <div className="border-l-3 border-blue-600 pl-4 py-1">
+            <h4 className="text-lg font-serif text-[#1e3a8a] font-bold">{STORY_METADATA.title}</h4>
+            <p className="text-xs text-slate-500 mt-0.5">{STORY_METADATA.subhead}</p>
           </div>
 
           <div className="space-y-3 pt-2">
             {summaryPoints.map((item, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl bg-stone-900/50 border border-stone-800">
-                <div className="flex items-center gap-2 text-xs font-semibold text-amber-300 font-sans mb-1">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <div key={idx} className="p-3.5 rounded-xl bg-[#F6EFE0]/60 border border-stone-200/90">
+                <div className="flex items-center gap-2 text-xs font-semibold text-[#1e40af] font-sans mb-1">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 shrink-0" />
                   <span>{idx + 1}. {item.title}</span>
                 </div>
-                <p className="text-xs text-stone-300 leading-relaxed font-sans pl-5.5">
+                <p className="text-xs text-slate-700 leading-relaxed font-sans pl-5.5">
                   {item.content}
                 </p>
               </div>
@@ -99,19 +99,19 @@ Nguồn: Vietnam Economic Review`;
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t border-stone-800 flex items-center justify-between bg-stone-950">
-          <span className="text-[11px] font-mono text-stone-500">Thời gian đọc: ~3 phút</span>
+        <div className="p-4 border-t border-stone-200 flex items-center justify-between bg-[#FBF7EB]">
+          <span className="text-[11px] font-mono text-slate-500">Thời gian đọc: ~3 phút</span>
           <div className="flex items-center gap-2">
             <button
               onClick={handleCopy}
-              className="px-3.5 py-2 bg-stone-800 hover:bg-stone-700 text-stone-200 text-xs font-medium rounded transition-colors flex items-center gap-1.5"
+              className="px-3.5 py-2 bg-white hover:bg-stone-50 border border-stone-300 text-slate-700 text-xs font-medium rounded transition-colors flex items-center gap-1.5 shadow-2xs"
             >
-              {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+              {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5" />}
               <span>{copied ? 'Đã sao chép' : 'Sao chép tóm tắt'}</span>
             </button>
             <button
               onClick={onClose}
-              className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-stone-950 text-xs font-semibold rounded transition-colors"
+              className="px-3.5 py-2 bg-[#1e3a8a] hover:bg-blue-800 text-white text-xs font-semibold rounded transition-colors shadow-xs"
             >
               Đóng
             </button>

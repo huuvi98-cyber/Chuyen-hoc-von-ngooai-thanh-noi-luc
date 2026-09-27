@@ -20,7 +20,7 @@ export const TopNavigation: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
       {/* Horizontal reading progress bar at very top edge */}
       <div 
-        className="h-[3px] bg-gradient-to-r from-cyan-400 via-sky-300 to-amber-200 transition-all duration-150 ease-out shadow-xs shadow-cyan-400/50"
+        className="h-[3px] bg-gradient-to-r from-blue-700 via-sky-500 to-blue-600 transition-all duration-150 ease-out shadow-xs shadow-blue-500/30"
         style={{ width: `${scrollProgress}%` }}
       />
     </header>

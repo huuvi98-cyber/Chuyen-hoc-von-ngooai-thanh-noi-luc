@@ -99,9 +99,6 @@ export const CyberCurrencyBackground: React.FC = () => {
         }}
       />
 
-      {/* Inner Inward-Converging Vortex Core */}
-      {/* (Removed the 2 crosshair lines inside the circle as requested) */}
-
       {/* Gentle Canvas Inward Flow Layer */}
       <canvas ref={canvasRef} className="absolute inset-0 z-10 w-full h-full" />
 
@@ -135,7 +132,7 @@ export const CyberCurrencyBackground: React.FC = () => {
             className="absolute inset-[8%] flex items-center justify-center animate-[spin_50s_linear_infinite_reverse]"
           >
             <svg className="w-full h-full" viewBox="0 0 340 340" fill="none">
-              <circle cx="170" cy="170" r="162" stroke="#00f0ff" strokeWidth="2.5" strokeDasharray="50 18 20 18 80 25" strokeOpacity="0.65" filter="url(#softGlow)" />
+              <circle cx="170" cy="170" r="162" stroke="#00f0ff" strokeWidth="2.5" strokeDasharray="50 18 20 18 80 25" strokeOpacity="0.65" />
               <circle cx="170" cy="170" r="148" stroke="#3b82f6" strokeWidth="1.2" strokeDasharray="6 6" strokeOpacity="0.4" />
               <circle cx="170" cy="170" r="135" stroke="#60a5fa" strokeWidth="0.8" strokeDasharray="160 8 4 8" strokeOpacity="0.5" />
             </svg>
@@ -153,7 +150,7 @@ export const CyberCurrencyBackground: React.FC = () => {
             </svg>
           </div>
 
-          {/* Layer 4: Soft, subtle tokens already absorbed inside the vortex */}
+          {/* Layer 4: Soft tokens inside the vortex */}
           <div className="absolute inset-0 flex items-center justify-center opacity-50">
             {/* Dollar $ inside */}
             <div className="absolute left-[38%] top-[55%] flex items-center justify-center w-11 h-11 rounded-full border border-cyan-400/50 bg-cyan-950/40 shadow-[0_0_8px_rgba(0,240,255,0.3)] animate-[gentlePulseInward_6s_ease-in-out_infinite]">
@@ -176,7 +173,7 @@ export const CyberCurrencyBackground: React.FC = () => {
       {/* Floating Currency Hologram Tokens: MỜ HƠN & HÚT VÔ VÒNG TRÒN, CHUYỂN ĐỘNG NHẸ */}
       <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
         
-        {/* Token 1: Pound £ (Gently drawn inward towards the portal) */}
+        {/* Token 1: Pound £ */}
         <div 
           className="absolute left-[32%] top-[35%] w-13 h-13 sm:w-15 sm:h-15 rounded-full border border-cyan-400/40 bg-[#03236e]/25 backdrop-blur-xs flex items-center justify-center shadow-[0_0_12px_rgba(0,240,255,0.25)] opacity-50"
           style={{
@@ -189,7 +186,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           </div>
         </div>
 
-        {/* Token 2: Franc ₣ (Upper-middle, slowly drawn inward) */}
+        {/* Token 2: Franc ₣ */}
         <div 
           className="absolute left-[44%] top-[36%] w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-cyan-300/45 bg-[#023396]/30 backdrop-blur-xs flex items-center justify-center shadow-[0_0_16px_rgba(0,240,255,0.3)] opacity-55"
           style={{
@@ -202,7 +199,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           </div>
         </div>
 
-        {/* Token 3: Dollar $ (Center stream, drifting calmly inward) */}
+        {/* Token 3: Dollar $ */}
         <div 
           className="absolute left-[56%] top-[34%] w-18 h-18 sm:w-22 sm:h-22 rounded-full border border-cyan-400/50 bg-[#043bb0]/30 backdrop-blur-xs flex items-center justify-center shadow-[0_0_18px_rgba(0,240,255,0.35)] opacity-65"
           style={{
@@ -215,7 +212,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           </div>
         </div>
 
-        {/* Token 4: Yen ¥ (Lower track, drifting inward and upward towards center) */}
+        {/* Token 4: Yen ¥ */}
         <div 
           className="absolute left-[38%] top-[56%] w-11 h-11 sm:w-13 sm:h-13 rounded-full border border-sky-400/40 bg-[#021f66]/25 flex items-center justify-center shadow-[0_0_10px_rgba(56,189,248,0.25)] opacity-45"
           style={{
@@ -226,7 +223,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           <span className="text-sky-200/80 font-mono font-medium text-lg sm:text-xl drop-shadow-[0_0_5px_rgba(56,189,248,0.4)]">¥</span>
         </div>
 
-        {/* Token 5: Rupee ₹ (Lower middle track, calm inward glide) */}
+        {/* Token 5: Rupee ₹ */}
         <div 
           className="absolute left-[49%] top-[58%] w-15 h-15 sm:w-18 sm:h-18 rounded-full border border-cyan-400/45 bg-[#022b85]/25 flex items-center justify-center shadow-[0_0_14px_rgba(0,240,255,0.25)] opacity-50"
           style={{
@@ -239,7 +236,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           </div>
         </div>
 
-        {/* Token 6: Large Yen ¥ (Far right, gliding softly into the suction stream) */}
+        {/* Token 6: Large Yen ¥ */}
         <div 
           className="absolute left-[68%] top-[50%] w-20 h-20 sm:w-26 sm:h-26 rounded-full border border-cyan-400/45 bg-[#053299]/25 backdrop-blur-xs flex items-center justify-center shadow-[0_0_20px_rgba(0,240,255,0.25)] opacity-50"
           style={{
@@ -252,7 +249,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           </div>
         </div>
 
-        {/* Token 7: Franc ₣ (Upper right, calm inward drift) */}
+        {/* Token 7: Franc ₣ */}
         <div 
           className="absolute left-[72%] top-[22%] w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-cyan-400/35 bg-[#021f66]/20 flex items-center justify-center shadow-[0_0_10px_rgba(0,240,255,0.2)] opacity-40"
           style={{
@@ -263,7 +260,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           <span className="text-cyan-200/75 font-mono font-medium text-lg sm:text-xl drop-shadow-[0_0_5px_rgba(0,240,255,0.3)]">₣</span>
         </div>
 
-        {/* Token 8: Ruble ₽ (Far right subtle watermark) */}
+        {/* Token 8: Ruble ₽ */}
         <div 
           className="absolute -right-4 sm:right-[3%] top-[20%] w-24 h-24 sm:w-34 sm:h-34 rounded-full border border-blue-400/30 bg-[#031d61]/15 flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.2)] opacity-35"
           style={{
@@ -276,7 +273,7 @@ export const CyberCurrencyBackground: React.FC = () => {
           </div>
         </div>
 
-        {/* Token 9: Dollar $ (drifting gently into the core) */}
+        {/* Token 9: Dollar $ */}
         <div 
           className="absolute left-[50%] top-[19%] w-12 h-12 rounded-full border border-cyan-400/45 bg-[#03236e]/30 backdrop-blur-xs flex items-center justify-center shadow-[0_0_12px_rgba(0,240,255,0.3)] opacity-60"
           style={{
@@ -288,9 +285,9 @@ export const CyberCurrencyBackground: React.FC = () => {
         </div>
       </div>
 
-      {/* Ambient Vignette & Smooth Fade to deep blue at the bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#061238] via-transparent to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#061238]/70 to-[#061238] pointer-events-none" />
+      {/* Ambient Vignette & Smooth Fade at the bottom */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#061238]/60 via-transparent to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-b from-transparent to-[#061238] pointer-events-none" />
     </div>
   );
 };

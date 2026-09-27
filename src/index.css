@@ -22,7 +22,7 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Custom editorial drop cap (pale yellow) */
+/* Custom editorial drop cap (deep editorial blue) */
 .editorial-drop-cap::first-letter {
   float: left;
   font-family: 'Lora', Georgia, serif;
@@ -31,26 +31,26 @@
   padding-top: 0.35rem;
   padding-right: 0.8rem;
   padding-bottom: 0.1rem;
-  color: #fef08a;
-  text-shadow: 0 2px 16px rgba(254, 240, 138, 0.35);
-  font-weight: 500;
+  color: #1e3a8a;
+  text-shadow: 0 2px 8px rgba(30, 58, 138, 0.2);
+  font-weight: 600;
   font-style: italic;
 }
 
-/* Custom scrollbar for deep blue theme */
+/* Custom scrollbar for pale yellow theme */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #061238;
+  background: #FAF6E9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e3a8a;
+  background: #93c5fd;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: #3b82f6;
 }
 
 @keyframes float {
