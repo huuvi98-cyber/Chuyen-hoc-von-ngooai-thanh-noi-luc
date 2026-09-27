@@ -1,0 +1,6 @@
+{
+  "name": "Kỷ Nguyên Vị Thế Mới - Longform Kinh Tế",
+  "description": "Chuyên đề báo chí tương tác đa phương tiện về chuyển dịch chuỗi cung ứng toàn cầu, công nghiệp bán dẫn và tăng trưởng kinh tế Việt Nam theo phong cách Shorthand visual storytelling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

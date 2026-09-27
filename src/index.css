@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+}
+
+.font-serif {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom editorial drop cap (pale yellow) */
+.editorial-drop-cap::first-letter {
+  float: left;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 4.25rem;
+  line-height: 0.82;
+  padding-top: 0.35rem;
+  padding-right: 0.8rem;
+  padding-bottom: 0.1rem;
+  color: #fef08a;
+  text-shadow: 0 2px 16px rgba(254, 240, 138, 0.35);
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Custom scrollbar for deep blue theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #061238;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes suckInward {
+  0% {
+    transform: translate(70px, 0px) scale(1.04);
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.55;
+  }
+  75% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translate(-160px, var(--inward-y, 0px)) scale(0.72);
+    opacity: 0.05;
+  }
+}
+
+@keyframes gentlePulseInward {
+  0%, 100% {
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(0.92) translate(-12px, 2px);
+    opacity: 0.6;
+  }
+}
+
